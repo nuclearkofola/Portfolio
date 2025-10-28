@@ -36,6 +36,22 @@ section {
   .flex-col-center {
     @apply flex flex-col justify-center items-center;
   }
+
+  /* size aliases used across the project (fallbacks for custom `size-*` utilities) */
+  .size-5  { @apply w-5  h-5; }
+  .size-8  { @apply w-8  h-8; }
+  .size-10 { @apply w-10 h-10; }
+  .size-12 { @apply w-12 h-12; }
+  .size-20 { @apply w-20 h-20; }
+
+  /* color/token aliases so `bg-white-50`, `text-white-50`, `bg-black-*` etc. work */
+  .bg-white-50 { background-color: var(--color-white-50); }
+  .text-white-50 { color: var(--color-white-50); }
+  .bg-black-200 { background-color: var(--color-black-200); }
+  .bg-black-100 { background-color: var(--color-black-100); }
+  .bg-black-50  { background-color: var(--color-black-50); }
+  .border-black-50 { border-color: var(--color-black-50); }
+  .text-black-50 { color: var(--color-black-50); }
 }
 
 @layer components {
